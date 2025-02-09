@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="ntc"></span>
+    <script>
+        const arr = ["Elnur", "Tünzalə", "Əli", "Günay", "Nurlan", "Leyla"];
+        const ntc = document.getElementById('ntc');
+        let uzun = arr[0]; 
+        
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i].length > uzun.length) {
+                uzun = arr[i]; 
+            }
+        }
+
+        ntc.textContent = `Ən böyük element: ${uzun}`;
+    </script>
+</body>
+</html>
